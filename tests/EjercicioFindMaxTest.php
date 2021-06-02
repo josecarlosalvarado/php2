@@ -10,8 +10,8 @@ final class EjercicioFindMaxTest extends TestCase
   // Programar una función que devuelva el número mayor de un array
   public function testFindMaxTodosPositivos(): void
   {
-    
     $input = [6, 2, 17, 9];
+
     assertEquals(17, findMax($input));
   }
 
@@ -37,11 +37,6 @@ final class EjercicioFindMaxTest extends TestCase
   {
     $input = [1, 2, -17, 13];
     assertEquals(13, findMax($input));
-
-
-    $input = [8];
-    assertEquals(8, findMax($input));
-
   }
 
   public function testFindMaxConElMayorRepetido(): void
